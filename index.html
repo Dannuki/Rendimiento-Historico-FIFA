@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación - Dashboard Histórico FIFA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-dark fw-bold mb-3">Manual del Sistema - Rendimiento Histórico FIFA</h1>
+        
+        <div class="card mb-4">
+            <div class="card-header bg-dark text-white">Objetivo del Sistema</div>
+            <div class="card-body">
+                <p>Bienvenido a la plataforma de Inteligencia de Negocios para el análisis histórico de la Copa Mundial de la FIFA. Esta herramienta ha sido diseñada exclusivamente para consolidar, analizar y presentar de forma interactiva los Indicadores Clave de Desempeño de las selecciones nacionales.</p>
+                <p>El objetivo de este panel es facilitar la rápida toma de decisiones directivas y estratégicas, proporcionando a nuestros analistas deportivos información estructurada sobre el dominio histórico, el poder ofensivo y las tendencias goleadoras de los equipos a lo largo de las distintas ediciones del torneo.</p>            
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header bg-dark text-white">Diccionario de Indicadores estratégicos</div>
+                <div class="card-body p-4">
+                <div class="row g-3"> <!-- g-3 añade una separación uniforme -->
+                    
+                    <!-- KPI 1 --> 
+                    <div class="col-md-6">
+                        <div class="p-3 rounded h-100" style="background-color: #f4f6f9;">
+                            <h6 class="text-dark fw-bold mb-2">Ranking Histórico</h6>
+                            <p class="mb-2"><strong>Descripción:</strong> Expone el desempeño acumulado de las selecciones más dominantes.</p>
+                            <p class="mb-0"><strong>Visualización:</strong> La información se ordena en una tabla que detalla el Equipo, Victorias, Partidos Jugados y Porcentaje de Victorias.</p>
+                            <p>Útil para identificar equipos con alta fiabilidad histórica.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- KPI 2 -->
+                    <div class="col-md-6">
+                        <div class="p-3 rounded h-100" style="background-color: #ffffff;">
+                            <h6 class="text-dark fw-bold mb-2">Eficiencia Ofensiva</h6>
+                            <p class="mb-2"><strong>Descripción:</strong> Evalúa la capacidad de ataque histórica filtrando a los equipos que superan el promedio mínimo de goles.</p>
+                            <p class="mb-0"><strong>Visualización:</strong> La información se ordena en un gráfico de columnas que compara el promedio de goles anotados respecto a cada selección.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- KPI 3 -->
+                    <div class="col-md-6">
+                        <div class="p-3 rounded h-100" style="background-color: #ffffff;">
+                            <h6 class="text-dark fw-bold mb-2">Evolución Histórica del Mundial</h6>
+                            <p class="mb-2"><strong>Descripción:</strong> Muestra el crecimiento estructural y estadístico de la competición a lo largo de las décadas.</p>
+                            <p class="mb-0"><strong>Visualización:</strong> La información se presenta en un gráfico de líneas de tendencia que traza simultáneamente el Total de Goles, Promedio de Goles y Selecciones Participantes por año/versión del torneo.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- KPI 4 -->
+                    <div class="col-md-6">
+                        <div class="p-3 rounded h-100" style="background-color: #f4f6f9;">
+                            <h6 class="text-dark fw-bold mb-2">Índice de Rendimiento Top 5</h6>
+                            <p class="mb-2"><strong>Descripción:</strong> Indicador algorítmico que pondera el desempeño real considerando victorias y empates sobre los partidos jugados.</p>
+                            <p class="mb-0"><strong>Visualización:</strong> La información se muestra en un gráfico de barras horizontales que filtra dinámicamente y destaca con exclusividad a las cinco selecciones con la puntuación más alta en la historia.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-dark text-white">Guía Rápida de Uso e Interactividad</div>
+            <div class="card-body">
+                <p>Para explorar los datos dinámicamente, el panel de control incluye herramientas en la cabecera superior:</p>
+                <ul>
+                    <li><strong>Segmentadores:</strong> Puede utilizar dos filtros interactivos principales: uno por <strong>Equipo</strong> y otro por <strong>Año</strong>. Estos controles están diseñados como menús desplegables para maximizar el espacio visual dedicado a los gráficos.</li>
+                    <li><strong>Tarjetas Numéricas:</strong> En la parte superior también visualizará totalizadores globales (por ejemplo, la métrica de "16K Goles Históricos") que le permitirán comprender el volumen general de los datos a primera vista.</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-dark text-white text-center">
+                <h5 class="mb-0">Herramienta Interactiva BI</h5>
+            </div>
+            <!-- Contenedor del Iframe -->
+            <div class="card-body p-0 text-center" style="height: 600px;">
+                <iframe title="Dashboard_Mundial.pbix" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNDZmZjA3YTYtM2ZjYS00ZmY3LTgyMmItZTVjMTRkZjlhOTVmIiwidCI6IjY4MmE0ZTZhLWE3N2YtNDk1OC1hM2FjLTllMjY2ZDE4YWEzNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+
+        <div class="text-center mt-4 mb-5">
+            <p class="text-muted mb-3"><small>¿Desea ver los gráficos con mayor detalle?</small></p>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiNDZmZjA3YTYtM2ZjYS00ZmY3LTgyMmItZTVjMTRkZjlhOTVmIiwidCI6IjY4MmE0ZTZhLWE3N2YtNDk1OC1hM2FjLTllMjY2ZDE4YWEzNyIsImMiOjR9" class="btn btn-lg shadow text-white" style="background-color: #448899;" target="_blank">
+                Ir al Dashboard BI
+            </a>
+        </div>
+        
+
+    </div>
+</body>
+</html>
+
